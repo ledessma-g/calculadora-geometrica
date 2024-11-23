@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora geométrica</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/diversity--v1.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Calculadora geométrica</h1>
+        </header>
+        <main>
+            <section>
+                <details>
+                    <summary><img src="https://img.icons8.com/color/48/triangle-stroked.png" alt="triangulo">Triángulo</summary>
+                        <label for="base-triangulo">Ingresa la longitud de la base del triángulo</label>
+                        <input min="1" type="number" id="base-triangulo" name="base-triangulo">
+                        <label for="altura-triangulo">Ingresa la longitud de la altura del triángulo</label>
+                        <input min="1" type="number" name="altura-triangulo" id="altura-triangulo">
+                        <button onclick="triangulo()">Calcular</button>
+                        <p>El resultado es: <span id="span-triangulo"></span></p>
+                </details>
+            </section>
+            <section>
+                <details>
+                    <summary><img src="https://img.icons8.com/glyph-neue/48/unchecked-checkbox.png" alt="cuadrado">Cuadrado</summary>
+                        <label for="lado-cuadrado">Ingresa la longitud de un lado del cuadrado</label>
+                        <input min="1" type="number" id="lado-cuadrado" name="lado-cuadrado">
+                        <button onclick="cuadrado()">Calcular</button>
+                        <p>El resultado es: <span id="span-cuadrado"></span></p>
+                </details>
+            </section>
+            <section>
+                <details>
+                    <summary><img src="https://img.icons8.com/color/48/rectangle-stroked.png" alt="rectangulo">Rectángulo/paralelograma</summary>
+                        <label for="base-rectangulo">Ingresa la longitud de la base del rectángulo/paralelograma</label>
+                        <input min="1" type="number" id="base-rectangulo" name="base-rectangulo">
+                        <label for="altura-rectangulo">Ingresa la longitud de la altura del rectángulo/paralelograma</label>
+                        <input min="1" type="number" name="altura-rectangulo" id="altura-rectangulo">
+                        <button onclick="rectangulo()">Calcular</button>
+                        <p>El resultado es: <span id="span-rectangulo"></span></p>
+                </details>
+            </section>
+            <section>
+                <details>
+                    <summary><img src="https://img.icons8.com/emoji/48/hollow-red-circle-emoji.png" alt="circulo">Círculo</summary>
+                        <label for="radio-circulo">Ingresa la longitud del radio del círculo</label>
+                        <input min="1" type="number" id="radio-circulo" name="radio-circulo">
+                        <button onclick="circulo()">Calcular</button>
+                        <p>El resultado es: <span id="span-circulo"></span></p>
+                </details>
+            </section>
+            <section>
+                <details>
+                    <summary><img src="https://cdn-icons-png.flaticon.com/512/2627/2627927.png" width="48" height="48" alt="trapecio">Trapecio</summary>
+                        <label for="base-ma-trapecio">Ingresa la longitud de la base mayor del trapecio</label>
+                        <input min="1" type="number" id="base-ma-trapecio" name="base-ma-trapecio">
+                        <label for="base-me-trapecio">Ingresa la longitud de la base menor del trapecio</label>
+                        <input min="1" type="number" name="base-me-trapecio" id="base-me-trapecio">
+                        <label for="altura-trapecio">Ingresa la longitud de la altura del trapecio</label>
+                        <input min="1" type="number" name="altura-trapecio" id="altura-trapecio">
+                        <button onclick="trapecio()">Calcular</button>
+                        <p>El resultado es: <span id="span-trapecio"></span></p>
+                </details>
+            </section>
+            <section>
+                <details>
+                    <summary><img src="https://img.icons8.com/color/48/rhombus.png" alt="rombo">Rombo</summary>
+                        <label for="diag-ma-rombo">Ingresa la longitud de la diagonal mayor del rombo</label>
+                        <input min="1" type="number" id="diag-ma-rombo" name="diag-ma-rombo">
+                        <label for="diag-me-rombo">Ingresa la longitud de la diagonal menor del rombo</label>
+                        <input min="1" type="number" name="diag-me-rombo" id="diag-me-rombo">
+                        <button onclick="rombo()">Calcular</button>
+                        <p>El resultado es: <span id="span-rombo"></span></p>
+                </details>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
